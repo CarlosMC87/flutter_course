@@ -1,8 +1,10 @@
-// Reassignació d'un valor
-void main() {  
-     
-     int entero = 21;
-     entero = 22; // Reassignació del valor de la variable entero
+// DYNAMIC
+void main() {          
 
-     entero = "Hola Mundo"; // Error: No es pot assignar un String a una variable d'entero
+// Cualquier tipo (sin comprobación)
+dynamic algoDart = 123;   
+algoDart = "Hola"; // Cambia a String
+algoDart = true; // Cambia a bool      
+print(algoDart); // Imprime: true
+
 }
