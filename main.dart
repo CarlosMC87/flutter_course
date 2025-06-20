@@ -1,9 +1,7 @@
-// CONSTANTS
-void main() {      
+// FINAL
+void main() {          
 
-// Constante
-const PI_DART = 3.14;  
-
-PI_DART = 2;          // Dart (en tiempo de compilación) no se puede reasignar una constante
-
+// Final (solo asignación única en tiempo de ejecución)
+final fechaDart = DateTime.now(); 
+fechaDart= DateTime(2023, 10, 1); // Error: No se puede reasignar
 }
