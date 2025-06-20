@@ -1,10 +1,12 @@
-// DYNAMIC
+// INFERIT
 void main() {          
 
-// Cualquier tipo (sin comprobación)
-dynamic algoDart = 123;   
-algoDart = "Hola"; // Cambia a String
-algoDart = true; // Cambia a bool      
-print(algoDart); // Imprime: true
+  
+
+// Tipo inferido
+var ciudadDart = 'Barcelona';    // Dart (inferido como String) como en Javascript
+
+ciudadDart = 'Madrid'; // Reasignación de valor, no tipo
+ciudadDart = 123; // Error: Dart no permite cambiar el tipo de una variable una vez asignado
 
 }
