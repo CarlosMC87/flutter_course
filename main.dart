@@ -1,7 +1,7 @@
-// List cuando desconozco el tipo de dato
+// Set (para cuando no quiero repetir valores)
 void main() {          
 
-// List (como array en Javascript o PHP)
-List<Object> datos = ['Texto', 123, false, 3.14];
-print(datos[1]);
+// Set (como Set en Javascript o PHP)
+Set<int> numeros = {1, 2, 3};
+print(numeros);
 }
