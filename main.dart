@@ -1,7 +1,11 @@
-// Set (para cuando no quiero repetir valores)
-void main() {          
+// Set acceder a la data
+        
 
-// Set (como Set en Javascript o PHP)
-Set<int> numeros = {1, 2, 3};
-print(numeros);
+void main() {
+  Set<int> numeros = {1, 2, 3};
+
+  for (int numero in numeros) {
+    print(numero);
+  }
 }
+  
