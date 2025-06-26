@@ -1,7 +1,7 @@
-// FINAL
+// List
 void main() {          
 
-// Final (solo asignación única en tiempo de ejecución)
-final fechaDart = DateTime.now(); 
-fechaDart= DateTime(2023, 10, 1); // Error: No se puede reasignar
+// List (como array en Javascript o PHP)
+List<String> frutas = ['Manzana', 'Pera'];
+print(frutas);
 }
