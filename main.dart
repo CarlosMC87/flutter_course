@@ -1,9 +1,9 @@
-// Clase: Constructor Inicialización con parámetros nombrados
+// Clase: Constructor Inicialización con parámetros por defecto
 class Persona {
-  String? nombre;
-  int? edad;
+  String nombre;
+  int edad;
 
-  Persona({this.nombre, this.edad});
+  Persona({this.nombre = 'Sin nombre', this.edad = 0});
 
   void saludar() {
     // Método para obtener la longitud del nombre
@@ -12,6 +12,6 @@ class Persona {
 }
 
 void main() {
-  var persona = Persona( edad: 34, nombre: "Pedro",); // Crear una instancia de Persona. Puedo cambiar orden de los parámetros gracias a que son nombrados.
-  persona.saludar(); // Invocamos el método saludar. -> Hola, soy Pedro y tengo 34 años.
+  var persona = Persona(); // Crear una instancia de Persona con valores por defecto
+  persona.saludar(); 
 }
