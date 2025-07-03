@@ -1,11 +1,13 @@
-// Map
+// Alternativa a else/if
 
 void main() {
-  int edad = 20;
+  int nota = 7;
 
-  if (edad >= 18) {
-    print("Es mayor de edad");
+  if (nota >= 9) {
+    print("Sobresaliente");
+  } else if (nota >= 7) {
+    print("Notable");
   } else {
-    print("Es menor de edad");
+    print("Necesita mejorar");
   }
 }
