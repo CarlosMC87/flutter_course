@@ -1,9 +1,23 @@
 // Map
-        
 
 void main() {
- Map<String, int> edades = {'Pedro': 30, 'Ana': 25};
- print(edades['Pedro']); // Imprime: 30
- print(edades['Ana']); // Imprime: 25
+  bool esAdulto = true;
+  bool tieneCarnet = false;
+
+  // AND 
+  if (esAdulto && tieneCarnet) {
+    print("Puede conducir");
+  } else {
+    print("No puede conducir"); // ← Se imprime esto
+  }
+
+  // OR 
+  if (esAdulto || tieneCarnet) {
+    print("Cumple al menos una condición");
+  }
+
+  // NOT 
+  if (!tieneCarnet) {
+    print("No tiene carnet");
+  }
 }
-  
