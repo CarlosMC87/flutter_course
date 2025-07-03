@@ -1,7 +1,19 @@
-// Estructures de control de fluxe: ternari amb ramificacions
+// Clase
+class Persona {
+  String nombre;
+  int edad;
+
+  // Constructor
+  Persona(this.nombre, this.edad);
+
+  // Método
+  void saludar() {
+    print("Hola, soy $nombre y tengo $edad años.");
+  }
+  
+}
 
 void main() {
-  int edad = 16;
-  String mensaje = (edad >= 18) ? ((edad > 65)? "Jubilado": "Edad de trabajar") : ((edad < 12) ? "Niño" : "Adolescente");
-  print(mensaje); // → Menor
+  var persona = Persona("Pedro", 41); // Crear una instancia de Persona
+  persona.saludar(); // Invocamos el método saludar. -> Hola, soy Pedro y tengo 34 años.
 }
