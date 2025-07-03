@@ -1,13 +1,16 @@
-// Clase: Constructor con parámetros posicionales
+// Clase: Constructor nombrado
 class Persona {
-  String nombre;
-  int edad;
+  String? nombre;
+  int? edad;
 
-  Persona(this.nombre, this.edad);
+  Persona(String nombre, int edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+  }
 
   void saludar() {
     // Método para obtener la longitud del nombre
-    print("Hola, soy $nombre y tengo $edad años.");
+    print("Hola, soy ${this.nombre} y tengo ${this.edad} años.");
   }
 }
 
