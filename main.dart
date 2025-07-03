@@ -1,13 +1,16 @@
-// Alternativa a else/if
+// Estructures de control de flujo: switch
 
 void main() {
-  int nota = 7;
+  String dia = "lunes";
 
-  if (nota >= 9) {
-    print("Sobresaliente");
-  } else if (nota >= 7) {
-    print("Notable");
-  } else {
-    print("Necesita mejorar");
+  switch (dia) {
+    case "lunes":
+      print("Comienza la semana");
+      break;
+    case "viernes":
+      print("Ya es viernes");
+      break;
+    default:
+      print("Día normal");
   }
 }
