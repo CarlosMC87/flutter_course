@@ -1,23 +1,11 @@
 // Map
 
 void main() {
-  bool esAdulto = true;
-  bool tieneCarnet = false;
+  int edad = 20;
 
-  // AND 
-  if (esAdulto && tieneCarnet) {
-    print("Puede conducir");
+  if (edad >= 18) {
+    print("Es mayor de edad");
   } else {
-    print("No puede conducir"); // ← Se imprime esto
-  }
-
-  // OR 
-  if (esAdulto || tieneCarnet) {
-    print("Cumple al menos una condición");
-  }
-
-  // NOT 
-  if (!tieneCarnet) {
-    print("No tiene carnet");
+    print("Es menor de edad");
   }
 }
