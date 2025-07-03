@@ -6,14 +6,18 @@ class Persona {
   // Constructor
   Persona(this.nombre, this.edad);
 
-  // Método
-  void saludar() {
-    print("Hola, soy $nombre y tengo $edad años.");
+  int getNombreLength() {
+    return this.nombre.length; // Retorna la longitud del nombre
   }
-  
+
+  void printLength() {
+    print(
+      "La longitud del nombre es: ${getNombreLength()}",
+    ); // Imprime la longitud del nombre
+  }
 }
 
 void main() {
   var persona = Persona("Pedro", 41); // Crear una instancia de Persona
-  persona.saludar(); // Invocamos el método saludar. -> Hola, soy Pedro y tengo 34 años.
+  persona.getNombreLength(); // Invocamos el método saludar. -> Hola, soy Pedro y tengo 34 años.
 }
