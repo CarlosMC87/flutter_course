@@ -1,16 +1,7 @@
-// Estructures de control de flujo: switch
+// Estructures de control de fluxe: ternari
 
 void main() {
-  String dia = "lunes";
-
-  switch (dia) {
-    case "lunes":
-      print("Comienza la semana");
-      break;
-    case "viernes":
-      print("Ya es viernes");
-      break;
-    default:
-      print("Día normal");
-  }
+  int edad = 16;
+  String mensaje = (edad >= 18) ? "Mayor" : "Menor";
+  print(mensaje); // → Menor
 }
