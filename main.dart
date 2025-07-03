@@ -1,20 +1,17 @@
-// Clase: Constructor nombrado
+// Clase: Constructor Inicialización con parámetros nombrados
 class Persona {
-  String? nombre;
-  int? edad;
+  String nombre;
+  int edad;
 
-  Persona(String nombre, int edad) {
-    this.nombre = nombre;
-    this.edad = edad;
-  }
+  Persona({required this.nombre, required this.edad});
 
   void saludar() {
     // Método para obtener la longitud del nombre
-    print("Hola, soy ${this.nombre} y tengo ${this.edad} años.");
+    print("Hola, soy $nombre y tengo $edad años.");
   }
 }
 
 void main() {
-  var persona = Persona("Pedro", 41); // Crear una instancia de Persona
+  var persona = Persona( edad: 34, nombre: "Pedro",); // Crear una instancia de Persona. Puedo cambiar orden de los parámetros gracias a que son nombrados.
   persona.saludar(); // Invocamos el método saludar. -> Hola, soy Pedro y tengo 34 años.
 }
