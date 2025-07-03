@@ -1,9 +1,9 @@
 // Clase: Constructor Inicialización con parámetros nombrados
 class Persona {
-  String nombre;
-  int edad;
+  String? nombre;
+  int? edad;
 
-  Persona({required this.nombre, required this.edad});
+  Persona({this.nombre, this.edad});
 
   void saludar() {
     // Método para obtener la longitud del nombre
